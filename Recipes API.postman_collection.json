@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "9455b4c6-b1dd-4170-816f-ff8cf9805597",
+		"name": "Recipes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50448237",
+		"_collection_link": "https://anandjayakumar0101-4948851.postman.co/workspace/Anand-Anand's-Workspace~c105ffeb-ddd5-4c02-80f1-9d599cd7ad4c/collection/50448237-9455b4c6-b1dd-4170-816f-ff8cf9805597?action=share&source=collection_link&creator=50448237"
+	},
+	"item": [
+		{
+			"name": "create recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Chicken Biryani\",\r\n  \"description\": \"Spicy and flavorful rice dish\",\r\n  \"ingredients\": [\"Chicken\", \"Rice\", \"Spices\"],\r\n  \"instructions\": \"Cook chicken, mix with rice and spices.\",\r\n  \"cookingTime\": 60,\r\n  \"servings\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get recipe by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/recipes/692ad0611fdb2127cbebb1e5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"recipes",
+						"692ad0611fdb2127cbebb1e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update recipe by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Chicken Biryani (Hyderabadi Style)\",\r\n  \"cookingTime\": 75\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/recipes/692ad0611fdb2127cbebb1e5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"recipes",
+						"692ad0611fdb2127cbebb1e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete recipe by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
